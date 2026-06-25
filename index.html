@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graph Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="sidebar">
+
+    <h3>Graph Controls</h3>
+
+    <hr>
+
+    <button id="createBtn">Create Mode</button>
+    <button id="weightBtn">Weight Mode</button>
+    <button id="deleteBtn">Delete Mode</button>
+
+    <hr>
+
+    <select id="algo">
+        <option value="bfs">BFS</option>
+        <option value="dfs">DFS</option>
+        <option value="dijkstra">Dijkstra</option>
+        <option value="astar">A star</option>
+        <option value="prims">Prims</option>
+        <option value="kruskal">Kruskals</option>
+    </select>
+
+    <button id="runBtn">Run</button>
+
+    <input id="startNode" placeholder="Start">
+    <input id="targetNode" placeholder="Target">
+
+    <hr>
+
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="step">Step</button>
+
+    <hr>
+
+    <button id="componentsBtn">Connected Components</button>
+    <button id="cycleBtn">Detect Cycle</button>
+    <button id="bipartiteBtn">Bipartite Check</button>
+
+
+   <div style="
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+">
+
+    <button id="resetBtn">Reset</button>
+    <button id="clear">Clear</button>
+    <button id="saveBtn">Save Graph</button>
+    <button id="loadBtn">Load Graph</button>
+    <button id="deleteGraphBtn">Delete Saved</button>
+    <button id="exportBtn">Explore Graphs</button>
+    <input type="file" id="importFile" hidden>
+    <button id="importBtn">Import Graph</button>
+
+</div>
+
+</div>
+
+    <div id="toast"></div>
+
+    <div id="weightModal" class="modal">
+    <div class="modal-box">
+        <p>Enter weight:</p>
+        <input id="weightInput" type="number" />
+        <button id="saveWeight">Save</button>
+        <button id="cancelWeight">Cancel</button>
+    </div>
+</div>
+ <div id="resultBox">
+    Result will appear here
+</div>
+
+<div id="graphModal" class="modal">
+    <div class="modal-box">
+
+        <p id="graphModalTitle"></p>
+
+        <input id="graphNameInput" type="text">
+
+        <div id="graphList"></div>
+
+        <button id="graphOk">OK</button>
+        <button id="graphCancel">Cancel</button>
+
+    </div>
+</div>
+
+    <canvas id="can"></canvas>
+   
+    <script src="bfs.js"></script>
+    <script src="dfs.js"></script>
+    <script src="connected.js"></script>
+    <script src="cycle.js"></script>
+    <script src="dijkstras.js"></script>
+    <script src="acore.js"></script>
+    <script src="mst.js"></script>
+    <script src="getweight.js"></script>
+    <script src="kruskal.js"></script>
+     <script src="bipartite.js"></script>
+     <script src="save.js"></script>
+     <script src="load.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
