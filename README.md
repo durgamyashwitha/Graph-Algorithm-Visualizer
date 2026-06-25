@@ -6,16 +6,16 @@ An interactive, web-based Graph Algorithm Visualizer built with **HTML, CSS, and
 ---
 
 
-##  Screenshots
+## 📸 Screenshots
 
 ### Home Screen
-![Home Screen](screenshots/home.png)
+<img src="screenshots/home.png" width="700"/>
 
 ### BFS Visualization
-![BFS](screenshots/bfs.png)
+<img src="screenshots/bfs.png" width="700"/>
 
 ### DFS Visualization
-![DFS](screenshots/dfs.png)
+<img src="screenshots/dfs.png" width="700"/>
 
 ---
 
